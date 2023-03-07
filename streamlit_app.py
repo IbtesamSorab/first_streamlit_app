@@ -72,7 +72,7 @@ def insert_row_snowflake(new_fruit):
         my_cnx.close()
         return "Thanks for adding"+ new_fruit
    
-fruit_choice = streamlit.text_input('What fruit would you like to add?','Kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like to add?')
 red=insert_row_snowflake(fruit_choice)
 streamlit.text(red)
 #my_cur= my_cnx.cursor()
